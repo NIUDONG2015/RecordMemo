@@ -10,7 +10,6 @@ import com.example.tailin.privatepage.base.BaseActivity;
 
 /**
  * Created by niudng on 2017/4/9.
- * 参考地址：http://blog.csdn.net/guolin_blog/article/details/51763825
  */
 
 
