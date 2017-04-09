@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.example.tailin.privatepage"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/myworkframe.jar')
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    //广告无限轮播框架
+    compile 'com.youth.banner:banner:1.4.9' //最新版本
+    //图片加载框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //网络加载框架
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    //视频播放
+    compile 'com.shuyu:GSYVideoPlayer:1.6.1'
+
+}
